@@ -33,7 +33,7 @@ with open(directory + path, 'r') as file:
 # Initialize the OpenAI API client
 client = AzureOpenAI(
   api_key = "<your key>",
-  api_version = '2023-05-15',
+  api_version = '2024-02-15-preview',
   azure_endpoint = "<your endpoint>"
 )
 

@@ -343,9 +343,9 @@ else:
 
 # Initialize the OpenAI API client
 client = AzureOpenAI(
-  api_key = "c6af48fe651d44bb80477d9f17918c3d",
-  api_version = '2023-05-15',
-  azure_endpoint = "https://gpt-35-1106.openai.azure.com"
+  api_key = "<your key>",
+  api_version = '2024-02-15-preview',
+  azure_endpoint = "<your endpoint>"
 )
 
 

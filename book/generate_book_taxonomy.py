@@ -81,9 +81,9 @@ sample_input = books.iloc[5087:5088].to_csv(index=False)
 
 # gpt4
 client = AzureOpenAI(
-  api_key = "c6af48fe651d44bb80477d9f17918c3d",
+  api_key = "<your key>",
   api_version = '2024-02-15-preview', # '2024-02-15-preview','2023-05-15'
-  azure_endpoint = "https://gpt-35-1106.openai.azure.com"
+  azure_endpoint = "<your endpoint>"
 )
 
 book_taxonomy = dict()

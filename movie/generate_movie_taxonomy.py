@@ -97,10 +97,9 @@ taxonomy, sample_output = get_taxonomy_sample(n_features)
 
 # gpt4
 client = AzureOpenAI(
-  api_key = "c6af48fe651d44bb80477d9f17918c3d",
+  api_key = "<your key>",
   api_version = '2024-02-15-preview', # '2024-02-15-preview','2023-05-15'
-  azure_endpoint = "https://gpt-35-1106.openai.azure.com"
-#   temperature = 0
+  azure_endpoint = "<your endpoint>"
 )
 
 movie_taxonomy = dict()
@@ -130,8 +129,7 @@ for movie in tqdm(movie_names):
     Output:
 
     """
-    # {{"Genre": "Documentary", "Themes": "Unknown", "Streaming Availability": "Unknown", "IMDb": "8+", "Rotten Tomatoes": "90%+", "Metacritic": "90+", "MPAA Rating": "R", "Critical Reception": "Critically Acclaimed", "Runtime": "Medium (90-120 minutes)", "Visual Style": "Unknown", "Technology": "Unknown", "Language": "English", "Country of Origin": "United States", "Release Year": "1990s", "Awards": "Unknown", "Budget": "Unknown", "Box Office Revenue": "Unknown", "Cultural Impact": "Unknown", "Adaptation": "Original", "Content Warning": "Unknown"}}
-
+    
     response = client.chat.completions.create(
         model="GPT4-WEST-US",
         temperature=0.2,
